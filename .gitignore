@@ -1,0 +1,8 @@
+dist/
+node_modules/
+
+# Environment
+.vscode/
+.idea/
+*.iml
+.DS_Store

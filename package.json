@@ -1,0 +1,37 @@
+{
+	"name": "@flappygrant/sdk",
+	"version": "1.0.0",
+	"author": {
+		"url": "https://github.com/flappygrant",
+		"email": "flappyfloorg@gmail.com",
+		"name": "FlappyGrant"
+	},
+	"description": "SDK for games on www.flappygrant.com",
+	"homepage": "https://github.com/flappygrant/sdk#readme",
+	"bugs": {
+		"email": "flappyfloorg@gmail.com",
+		"url": "https://github.com/flappygrant/sdk/issues"
+	},
+	"repository": "github:flappygrant/sdk",
+	"license": "SEE LICENSE IN LICENSE",
+	"type": "module",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"dist": "bun dist:types && bun build --minify --outdir ./dist --target browser ./src/index.ts",
+		"dist:types": "bunx tsc --emitDeclarationOnly --declaration --outDir ./dist",
+		"prepublishOnly": "bun dist"
+	},
+	"devDependencies": {
+		"typescript": "^7.0.2"
+	}
+}
