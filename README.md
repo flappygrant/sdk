@@ -20,7 +20,7 @@ Once the game has been compiled to a singular JavaScript file, it can be provide
 **Example source:** (in TypeScript+ESM form, note that typed imports are removed during compilation, and ignored after)
 
 ```ts
-import "@flappygrant/sdk/api.d.ts"
+import "@flappygrant/sdk"
 
 FlappyGrant.sprite("player", new Sprite({ type: "player" })) // Registers a sprite by ID "player" of type "player", also usefully returns the created Sprite for fast access
 
