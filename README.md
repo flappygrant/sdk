@@ -17,10 +17,10 @@ We recommend installing our NPM package (`@flappygrant/sdk`) in your Node/Bun pr
 
 Once the game has been compiled to a singular JavaScript file, it can be provided to the [FlappyGrant Custom Game Page](https://www.flappygrant.com/custom-game) for execution by the site's runtime!
 
-**Example source:** (in TypeScript+ESM form, note that typed imports are removed during compilation, and ignored after)
+**Example source:** (in JavaScript form, note that those tripple-slash typed imports are removed during compilation, and ignored after)
 
 ```ts
-import "@flappygrant/sdk"
+/// <reference path="../node_modules/@flappygrant/sdk/dist/api.d.ts" />
 
 FlappyGrant.sprite("player", new Sprite({ type: "player" })) // Registers a sprite by ID "player" of type "player", also usefully returns the created Sprite for fast access
 
