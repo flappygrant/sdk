@@ -15,7 +15,7 @@ Game developers do not directly use the FlappyGrant runtime. Instead, games are 
 
 We recommend installing our NPM package (`@flappygrant/sdk`) in your Node/Bun project, which provides both the runtime (unimportant) and best of all, types! Your IDE or TypeScript compiler can then use those types to provide accurate type checking and editor support while developing your game.
 
-Once the game has been compiled to a singular JavaScript file, it can be provided to the [FlappyGrant Custom Game Page](https://www.flappygrant.com/custom-game) for execution by the site's runtime!
+Once the game has been compiled to a singular JavaScript file, it can be provided to the [FlappyGrant Custom Game Page](https://www.flappygrant.com/custom-game.html) for execution by the site's runtime!
 
 **Example source:** (in JavaScript form, note that those tripple-slash typed imports are removed during compilation, and ignored after)
 
